@@ -38,7 +38,7 @@ for (n in unique(featraw$io)) {
   feat[[n]] <- featraw[featraw$io==n, c("ys", "classification")]
 }
 
-
-ss.pMap(steps, inputs, outputs, io, param, feat, sub="PSX Process")
-
+png("define_processmap0.png")
+ss.pMap(steps, inputs, outputs, io, param, feat, main="PSX Process", sub="Six Sigma Process Map")
+dev.off()
 
